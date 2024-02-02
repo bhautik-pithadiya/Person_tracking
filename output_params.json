@@ -1,0 +1,280 @@
+[
+    {
+        "Deep Sort": {
+            "max_dist": 0.2,
+            "min_confidence": 0.3,
+            "nms_max_overlap": 1,
+            "max_iou_distance": 0.8,
+            "n_init": 3,
+            "max_age": 70,
+            "nn_budget": 100,
+            "use_cuda": "True"
+        },
+        "Yolonas": {
+            "model": "s",
+            "iou": 0.8,
+            "conf": 0.7
+        },
+        "Output": {
+            "name": "output/output_9.mp4",
+            "description": "Very Bad. Too many bounding boxes genrated for 1 person"
+        }
+    },
+    {
+        "changed": [
+            "model",
+            "conf"
+        ],
+        "Deep Sort": {
+            "max_dist": 0.2,
+            "min_confidence": 0.3,
+            "nms_max_overlap": 1,
+            "max_iou_distance": 0.8,
+            "n_init": 3,
+            "max_age": 70,
+            "nn_budget": 100,
+            "use_cuda": "True"
+        },
+        "Yolonas": {
+            "model": "l",
+            "iou": 0.8,
+            "conf": "0.4"
+        },
+        "Output": {
+            "name": "output/output_10.mp4",
+            "description": "Good predictio but still have the occlusion problem and still after occlusion 2 3 bboxes are generating, still swaping of track ids."
+        }
+    },
+    {
+        "changed": [
+            "max_iou_distance",
+            "max_age"
+        ],
+        "Deep Sort": {
+            "max_dist": 0.2,
+            "min_confidence": 0.3,
+            "nms_max_overlap": 1,
+            "max_iou_distance": 0.9,
+            "n_init": 3,
+            "max_age": 100,
+            "nn_budget": 100,
+            "use_cuda": "True"
+        },
+        "Yolonas": {
+            "model": "l",
+            "iou": 0.8,
+            "conf": 0.4
+        },
+        "Output": {
+            "name": "output/output_11.mp4",
+            "description": "Good prediction but still have the occlusion problem and still after occlusion 2 3 bboxes are generating, still swaping of track ids."
+        }
+    },
+    {
+        "changed": [
+            "conf"
+        ],
+        "Deep Sort": {
+            "max_dist": 0.2,
+            "min_confidence": 0.3,
+            "nms_max_overlap": 1,
+            "max_iou_distance": 0.9,
+            "n_init": 3,
+            "max_age": 100,
+            "nn_budget": 100,
+            "use_cuda": "True"
+        },
+        "Yolonas": {
+            "model": "l",
+            "iou": 0.8,
+            "conf": 0.7
+        },
+        "Output": {
+            "name": "output/output_12.mp4",
+            "description": "At the end of the entrance detection is not happening. Detection is good, ID swappiing problem is still there."
+        }
+    },
+    {
+        "changed": [
+            "max_age",
+            "n_init",
+            "max_iou_distance",
+            "min_confidence",
+            "iou",
+            "conf"
+        ],
+        "Deep Sort": {
+            "max_dist": 0.2,
+            "min_confidence": 0.5,
+            "nms_max_overlap": 1,
+            "max_iou_distance": 0.3,
+            "n_init": 5,
+            "max_age": 50,
+            "nn_budget": 100,
+            "use_cuda": "True"
+        },
+        "Yolonas": {
+            "model": "l",
+            "iou": 0.7,
+            "conf": 0.4
+        },
+        "Output": {
+            "name": "/home/ksuser/LS/Yolonas-deepsort-main/output/pathway_3_ma_change.mp4",
+            "description": "Good tracking but at loast some of the ids are changing."
+        }
+    },
+    {
+        "changed": [
+            "max_age",
+            "n_init"
+        ],
+        "Deep Sort": {
+            "max_dist": 0.2,
+            "min_confidence": 0.5,
+            "nms_max_overlap": 1,
+            "max_iou_distance": 0.3,
+            "n_init": 3,
+            "max_age": 70,
+            "nn_budget": 100,
+            "use_cuda": "True"
+        },
+        "Yolonas": {
+            "model": "l",
+            "iou": 0.7,
+            "conf": 0.4
+        },
+        "Output": {
+            "name": "/home/ksuser/LS/Yolonas-deepsort-main/output/pathway_3_n_init_change.mp4",
+            "description": "Improvement in the assignments of ID w.r.t the distance in sequence."
+        }
+    },
+    {
+        "changed": [
+            "max_age"
+        ],
+        "Deep Sort": {
+            "max_dist": 0.2,
+            "min_confidence": 0.5,
+            "nms_max_overlap": 1,
+            "max_iou_distance": 0.3,
+            "n_init": 3,
+            "max_age": 50,
+            "nn_budget": 100,
+            "use_cuda": "True"
+        },
+        "Yolonas": {
+            "model": "l",
+            "iou": 0.7,
+            "conf": 0.4
+        },
+        "Output": {
+            "name": "/home/ksuser/LS/Yolonas-deepsort-main/output/pathway_3_ma_n_init_change.mp4",
+            "description": "No visible change"
+        }
+    },
+    {
+        "changed": [
+            "max_age",
+            "max_iou_distance"
+        ],
+        "Deep Sort": {
+            "max_dist": 0.2,
+            "min_confidence": 0.5,
+            "nms_max_overlap": 1,
+            "max_iou_distance": 0.7,
+            "n_init": 3,
+            "max_age": 30,
+            "nn_budget": 100,
+            "use_cuda": "True"
+        },
+        "Yolonas": {
+            "model": "l",
+            "iou": 0.7,
+            "conf": 0.4
+        },
+        "Output": {
+            "name": "/home/ksuser/LS/Yolonas-deepsort-main/output/best_pathway_3_ma_iou.mp4",
+            "description": [
+                "assigned track id were not changing."
+            ],
+            "tryinig_on_another_video": {
+                "path": "/home/ksuser/LS/Yolonas-deepsort-main/output/entrance_clip_ma_iou.mp4",
+                "description": "Reassignment of ids was happening when aajju bhai were occluded by decoration."
+            }
+        }
+    },
+    {
+        "changed": [
+            "n_init"
+        ],
+        "Deep Sort": {
+            "max_dist": 0.2,
+            "min_confidence": 0.5,
+            "nms_max_overlap": 1,
+            "max_iou_distance": 0.7,
+            "n_init": 5,
+            "max_age": 30,
+            "nn_budget": 100,
+            "use_cuda": "True"
+        },
+        "Yolonas": {
+            "model": "l",
+            "iou": 0.7,
+            "conf": 0.4
+        },
+        "Output": {
+            "name": "/home/ksuser/LS/Yolonas-deepsort-main/output/entrance_clip_ma_iou_n_init.mp4",
+            "description": "Reassignment of ids was happening. Very much"
+        }
+    },
+    {
+        "changed": [
+            "n_init"
+        ],
+        "Deep Sort": {
+            "max_dist": 0.2,
+            "min_confidence": 0.5,
+            "nms_max_overlap": 1,
+            "max_iou_distance": 0.7,
+            "n_init": 3,
+            "max_age": 30,
+            "nn_budget": 100,
+            "use_cuda": "True"
+        },
+        "Yolonas": {
+            "model": "l",
+            "iou": 0.7,
+            "conf": 0.4
+        },
+        "Output": {
+            "query": "trying to check max_iou_distance on an occlusion.",
+            "name": "/home/ksuser/LS/Yolonas-deepsort-main/output/entrance_clip_0_occlusion_test_iou.mp4",
+            "description": "Reassignment of ids was happening. Very much"
+        }
+    },
+    {
+        "changed": [
+            "max_iou_distance"
+        ],
+        "Deep Sort": {
+            "max_dist": 0.2,
+            "min_confidence": 0.5,
+            "nms_max_overlap": 1,
+            "max_iou_distance": 0.3,
+            "n_init": 3,
+            "max_age": 30,
+            "nn_budget": 100,
+            "use_cuda": "True"
+        },
+        "Yolonas": {
+            "model": "l",
+            "iou": 0.7,
+            "conf": 0.4
+        },
+        "Output": {
+            "query": "trying to check max_iou_distance on an occlusion.",
+            "name": "/home/ksuser/LS/Yolonas-deepsort-main/output/entrance_clip_ma_iou_n_init.mp4",
+            "description": "at time of occlusion id changes or swap is happening"
+        }
+    }
+]
